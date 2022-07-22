@@ -1,0 +1,60 @@
+@use '../../../colors' as colors;
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   // background-image: url("../../../assets/images/ttecbg.png");
+    background-size: cover;
+
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 14rem;
+        height: 14rem;
+        min-width: 170px;
+        padding: 2em;
+        border-radius: 15px;
+        z-index: 3;
+
+        .ttec-logo {
+            width: 7rem;
+        }
+        
+        .header {
+            font-size: 0.8em;
+            opacity: 0.8;
+            margin: 0;
+           // color: colors.$LightOrange;
+        }
+
+        .login-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.6em;
+            border-radius: 30px;
+            width: 40%;
+            min-width: 100px;
+            font-size: small;
+            border: 1px solid transparent;
+            margin: 2em 0 1em 0;
+           
+        }
+
+        .help-link {
+            color: 'blue';
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 200;
+            font-size: small;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
